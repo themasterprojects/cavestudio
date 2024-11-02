@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.secondList *,
+.optionsLists * {
+  transition: background 0s !important;
+}
+
+body {
+  font-family: "Inter", monospace;
+  overflow-x: hidden;
+}

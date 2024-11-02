@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  /* scrollbar-gutter: stable; */
+  -webkit-user-drag: none;
+}
+
+* {
+  transition: background .3s, border .3s;
+}
+
+#importThree {
+  white-space: wrap;
+  word-wrap: break-word;
+}
+
+.light {
+  color-scheme: light;
+}
+
+.light * {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.dark * {
+  color-scheme: dark;
+}
+
+.light *::selection {
+  color: white;
+  background: crimson;
+}
+
+.dark *::selection {
+  color: white;
+  background: rgb(60, 60, 60);
+}
+
+img {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(assets/fonts/Inter/Inter.ttf);
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(assets/fonts/Helvetica/Helvetica.woff);
+}
+
+body,
+header {
+  transition: .3s;
+}
+
+#root,
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.light .projectTitleContainer {
+  background: rgb(230, 230, 230);
+}
+
+.dark .projectTitleContainer {
+  background: rgb(27, 27, 27);
+}
+
+.light .titleOverlay {
+  background: rgb(0, 0, 0, .3);
+}
+
+.light .projectTitleContainer input,
+.light .projectTitleContainer .submitChangesBtns {
+  border: 1px solid rgb(170, 170, 170)
+}
+
+.projectTitleContainer .submitChangesBtns:hover {
+  background: rgb(200, 200, 200);
+  color: black;
+}
+
+.dark .projectTileInput input {
+  border: 1px solid rgb(60, 60, 60);
+}
+
+.projectTitleContainer .submitChangesBtns:hover {
+  background: rgb(60, 60, 60);
+  color: white;
+}
+
+.secondListItemContainer,
+.secondListDefault {
+  width: 100%;
+}
+
+.light {
+  color: black;
+  background: rgb(250, 250, 250);
+  color-scheme: light;
+}
+
+.light header,
+.light .OptsLangsList {
+  color: rgb(0, 0, 0);
+  background: rgb(250, 250, 250);
+}
+
+.light .editorHeadersItems {
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.light textarea {
+  color: black;
+  font-family: serif;
+}
+
+.light .fancyBtn {
+  color: rgb(0, 0, 0);
+  background: rgb(235, 235, 235);
+}
+
+.light .fancyBtn:hover {
+  background: rgb(220, 220, 220);
+}
+
+.light .headerItem:hover {
+  background: rgb(230, 230, 230);
+}
+
+.light .optionsContainer,
+.light .secondListDefault {
+  background: rgb(240, 240, 240);
+}
+
+.light .edHeadersF {
+  height: 2px;
+}
+
+.dark {
+  background: rgb(24, 24, 24);
+  color: rgb(230, 230, 230);
+}
+
+.dark header,
+.dark .OptsLangsList {
+  background: rgb(24, 24, 24);
+  color: rgb(230, 230, 230);
+}
+
+.dark .editorHeadersItems {
+  border-bottom: 1px solid rgb(50, 50, 50);
+}
+
+.dark .fancyBtn {
+  color: rgb(170, 170, 170);
+  background: rgb(30, 30, 30);
+}
+
+.dark .fancyBtn:hover {
+  color: rgb(200, 200, 200);
+  background: rgb(40, 40, 40);
+}
+
+.dark .headerItem:hover {
+  background: rgb(45, 45, 45);
+}
+
+.dark .optionsContainer,
+.dark .secondListDefault {
+  background: rgb(40,40,40);
+}
+
+.dark .edHeadersF {
+  height: 1px;
+}
+
+.dark .secondListItemContainer:hover {
+  background: rgb(230, 230, 230, .3) !important;
+}
+
+.light .secondListItemContainer:hover {
+  background: rgb(220, 220, 220);
+}
+
+.dark .colorThemeItemContainer {
+  color: rgb(230, 230, 230);
+}
+
+.light .colorThemeItemContainer {
+  color: black;
+}
+
+.dark .activeFancyItem {
+  background: rgb(230, 230, 230) !important;
+  color: black;
+}
+
+.light .activeFancyItem {
+  background: crimson !important;
+  color: white !important;
+}
+
+.light .activeFancyItem:hover span {
+  color: white !important;
+}
+
+/* FullScreen Mode  */
+
+.FullScreenMode .editorHeadersItemsContainer {
+  position: fixed;
+  left: 0;
+  width: 55px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: left;
+  z-index: 5 !important;
+}
+
+.FullScreenMode .editorHeadersItemsContainer * {
+  border: none;
+}
+
+.dark .FullScreenMode .editorHeadersItemsContainer {
+  background: rgb(24, 24, 24);
+}
+
+.light .FullScreenMode .editorHeadersItemsContainer {
+  background: rgb(250, 250, 250);
+}
+
+.FullScreenMode .editorHeadersItems {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2px;
+  padding: 0px;
+}
+
+.dark .FullScreenMode .activeHeader {
+  background: rgb(45, 45, 45) !important;
+}
+
+.light .FullScreenMode .activeHeader {
+  background: rgb(220, 220, 220) !important;
+}
+
+.FullScreenMode .edHeadersF {
+  display: none !important;
+}
+
+.FullScreenMode .editorHeaderContainer {
+  width: 100%;
+  padding: 15px;
+}
+
+.FullScreenMode .editorHeaderContainer img {
+  width: 36px;
+}
+
+.dark .FullScreenMode .editorHeaderContainer {
+  /* background: rgb(30,30,30); */
+}
+
+.dark .FullScreenMode .editorHeaderContainer:hover {
+  background: rgb(40, 40, 40);
+}
+
+.light .FullScreenMode .editorHeaderContainer {
+  background: rgb(245, 245, 245);
+}
+
+.light .FullScreenMode .editorHeaderContainer:hover {
+  background: rgb(220, 220, 220);
+}
+
+.FullScreenMode .editorHeader {
+  position: absolute;
+  left: 0%;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: .3s;
+  white-space: nowrap;
+
+  width: 0;
+  opacity: 0;
+  z-index: -1;
+  transform: scale(.5);
+}
+
+.FullScreenMode .editorHeaderContainer:hover .editorHeader {
+  left: 120%;
+  width: max-content;
+  opacity: 1;
+  z-index: 5;
+  transform: scale(1);
+}
+
+.dark .FullScreenMode .editorHeader {
+  background: rgb(24, 24, 24);
+}
+
+.light .FullScreenMode .editorHeader {
+  background: crimson;
+  color: white;
+}
+
+.FullScreenMode .editorsContainer {
+  margin-left: 55px;
+}
+
+.librariesListContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.codeHeaderItem {
+  border-radius: 5px;
+  padding: 3px 13px;
+}
+
+.light .downloadCodeHeaderContainer {
+  color: white;
+}
+
+.light .codeHeaderItem {
+  background: rgb(220, 220, 220, .3);
+}
+
+.dark .codeHeaderItem {
+  background: rgb(30, 30, 30);
+}
+
+.hidePopup {
+  z-index: -1;
+  transform: scale(.3);
+  opacity: 0;
+}
+
+.showPopup {
+  z-index: 9898;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.dark .editProjectTitleWrapper {
+  background: rgb(30, 30, 30, .3);
+}
+
+.light .editProjectTitle input {
+  color: black;
+}
+
+.thirdListH {
+  font-size: 19px;
+  text-align: center;
+  padding: 5px;
+  font-weight: 650;
+  color: crimson;
+}

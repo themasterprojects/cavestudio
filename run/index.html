@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Demo - Cave Studio</title>
+
+  <!-- SOURCES -->
+
+  <script src="output.js" type="module" defer></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="module" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/livescript/1.6.1/livescript-min.js"
+    integrity="sha512-JEd9Ffj9DvlM8rVg+AVrza2+Mg6JxZg3BAkW5OtLZEcCRnFGgnU9beSJx+ya/y8EhQorSZ9qdEmFW0YBpr0wjg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" crossorigin="anonymous"></script>
+  <script type="module" crossorigin="anonymous">
+    var LiveScript = require("livescript");
+    LiveScript.go();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/coffee-script/1.4.0/coffee-script.min.js" integrity="sha512-VIiQM3nSWRCwI9ykslgwPXaXlh4DxLqwz3s+AH0ivThYkKcp2L5hp7U3rMMoEUY88T7cDIFjiX5BU6q5U6oW1g==" crossorigin="anonymous" referrerpolicy="no-referrer" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.26.2/babel.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typescript@5.6.3/lib/typescript.min.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.14/base.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.14/lib/index.min.js" crossorigin="anonymous"></script>
+
+  <!-- SCRIPTS -->
+
+  <script type="text/javascript" data-src="VanillaJS" defer type="module"></script>
+  <script type="text/javascript" data-src="jQuery" defer></script>
+  <script type="module" data-src="Vue" defer></script>
+  <script type="module" data-src="Typescript" defer>
+    const tsCode = localStorage.getItem("Code:TypeScript");
+
+    const jsCode = ts.transpile(tsCode);
+
+    eval(jsCode);
+  </script>
+  <script type="text/ls" data-src="liveScript" defer></script>
+  <script type="text/coffeescript" data-src="CoffeeScript" defer></script>
+  <script type="text/babel" data-src="Babel" defer data-type="module"></script>
+  <script data-src="Lodash" defer></script>
+  <script type="module" data-src="Three" defer></script>
+  <script data-src="tailwind" defer></script>
+
+  <style></style>
+</head>
+
+<body>
+
+  <span>Web App Cave Studio</span>
+
+
+  <script src="output.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.editorLeftSideContainer {
+  font-family: "Inter", monospace;
+}
+.editorLeftSideContainer .editorItem {
+  padding: 1px 0;
+}
+.editorLeftSideContainer textarea {
+  resize: none;
+  overflow: hidden;
+  height: 100vh;
+  font-size: 14px;
+  padding: 0 15px;
+  caret-color: crimson;
+  position: absolute;
+  color: transparent !important;
+}
+.editorLeftSideContainer textarea::-webkit-resizer {
+  display: none;
+}
+.editorLeftSideContainer .HighlightCode {
+  padding: 0 15px;
+  display: block;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+.editorLeftSideContainer .activeLibrary {
+  background: crimson !important;
+  color: white !important;
+}
+.editorLeftSideContainer .rowsindicator div {
+  width: 100%;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}/*# sourceMappingURL=editor.css.map */

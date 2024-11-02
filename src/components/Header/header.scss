@@ -1,0 +1,44 @@
+header {
+  font-family: "Inter", monospace;
+  font-size: 14px;
+
+
+  .thirdListContainer {
+    width: 200px;
+    height: 50vh;
+    overflow-y: scroll;
+  }
+
+  .editProjectTitleContainer {
+
+    // opacity: 0;
+    // z-index: -1;
+
+    background: rgb(0,0,0, .5);
+    z-index: 989898;
+    color: white;
+
+    .editProjectTitleWrapper {
+      backdrop-filter: blur(24px);
+    }
+
+    .editProjectTitleIcon {
+      transform: rotate3d(0, 01, 0, 180deg);
+      font-weight: lighter;
+      width: max-content;
+    }
+
+    .editProjectTitleInputActive {
+      opacity: 1;
+      z-index: 0;
+    }
+
+    .titleSubmitBtns .titleSubmitBtn {
+      padding: 5px 13px;
+      border-radius: 5px;
+      background: rgb(255, 255, 255, .1);
+      cursor: pointer;
+    }
+  }
+
+}
